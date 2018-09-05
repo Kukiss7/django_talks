@@ -1,0 +1,18 @@
+body {
+  background-image: url(../img/escheresque.png);
+}
+
+.logo {
+  font-family: 'Pacifico';
+}
+
+.logo a {
+  color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
+
+/* Background pattern from Toptal Subtle Patterns */
