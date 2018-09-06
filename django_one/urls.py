@@ -9,6 +9,8 @@ urlpatterns = [
 	path('', views.home, name='home'),
 	path('boards/<slug:pk>/', views.board_topics, name='board_topics'),
     path('boards/<slug:pk>/new/', views.new_topic, name='new_topic'),
+    path('boards/<slug:pk>/topics/<slug:topic_pk>/', views.topic_posts, name='topic_posts'),
+    path('boards/<slug:pk>/topics/<slug:topic_pk>/reply/', views.reply_topic, name='reply_topic'),
 
     path('signup/', accounts_views.signup, name='signup'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
