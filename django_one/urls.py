@@ -7,10 +7,13 @@ from accounts import views as accounts_views
 
 urlpatterns = [
 	path('', views.home, name='home'),
-	path('boards/<slug:pk>/', views.board_topics, name='board_topics'),
+	path('boards/<slug:pk>/', views.TopicListView.as_view(), name='board_topics'),
     path('boards/<slug:pk>/new/', views.new_topic, name='new_topic'),
-    path('boards/<slug:pk>/topics/<slug:topic_pk>/', views.topic_posts, name='topic_posts'),
+    path('boards/<slug:pk>/topics/<slug:topic_pk>/', views.PostListView.as_view(), name='topic_posts'),
     path('boards/<slug:pk>/topics/<slug:topic_pk>/reply/', views.reply_topic, name='reply_topic'),
+    path('boards/<slug:pk>/topics/<slug:topic_pk>/posts/<slug:post_pk>/edit/',
+    	views.PostUpdateView.as_view(),
+    	name='edit_post'),
 
     path('signup/', accounts_views.signup, name='signup'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
@@ -53,6 +56,8 @@ urlpatterns = [
     	auth_views.PasswordChangeDoneView.as_view(
     		template_name='password_change_done.html'),
     	name='password_change_done'),
+
+    path('settings/account/', accounts_views.UserUpdateView.as_view(), name='my_account'),
 
     path('admin/', admin.site.urls)
 ]

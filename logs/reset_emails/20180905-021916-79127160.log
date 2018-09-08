@@ -1,0 +1,29 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: [Django Boards] Please reset your password
+From: webmaster@localhost
+To: 123@123.123
+Date: Wed, 05 Sep 2018 00:19:16 -0000
+Message-ID: <153610675665.11908.11484304096035482270@Kukis-PC>
+
+Hi there,
+
+Someone asked for a password reset for the email address 123@123.123.
+Follow the link below:
+http://127.0.0.1:8000/reset/NQ/4zc-9f4cd73f3ac381de9de7/
+
+In case you forgot your Django Boards username: troll2
+
+If clicking the link above doesn't work, please copy and paste the URL
+in a new browser window instead.
+
+If you've received this mail in error, it's likely that another user entered
+your email address by mistake while trying to reset a password. If you didn't
+initiate the request, you don't need to take any further action and can safely
+disregard this email.
+
+Thanks,
+
+The Django Talks Team
+-------------------------------------------------------------------------------

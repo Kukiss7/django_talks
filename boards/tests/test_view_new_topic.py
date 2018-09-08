@@ -1,7 +1,7 @@
 from django.urls import reverse, resolve
 from django.test import TestCase
 from django.contrib.auth.models import User
-from ..views import board_topics, new_topic
+from ..views import TopicListView, new_topic
 from ..models import Board, Topic, Post
 from ..forms import NewTopicForm
 

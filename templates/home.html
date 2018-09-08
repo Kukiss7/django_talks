@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load humanize %}
 
 
 {% block breadcrumb %}
@@ -37,7 +38,7 @@
               <small>
                 {% if post %}
                   <a href="{% url 'topic_posts' board.pk post.topic.pk %}">
-                    By {{ post.created_by.username }} at {{ post.created_at }}
+                    By {{ post.created_by.username }}{{ post.created_at|naturaltime }}
                   </a>
                 {% else %}
                   No posts here.. You can be First!
