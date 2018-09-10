@@ -11,6 +11,11 @@
   border-color: teal;
 }
 
+.btn-primary:hover {
+  background-color: #07634f;
+  border-color: #07634f;
+}
+
 a{
   color: #343a40;
 }
