@@ -1,10 +1,9 @@
-Work in progress
-
-
 Project of the forum built with on Python 3.66, Django 2.1 and Bootstrap 4.13
+Live [here](http://tealhedgehog.pl/)
 
-For now only main pages are working and it's possible to open new topics
-when launched localy with SQLite database
+
+Sending emails work only when launched localy for now
+
 
 
 It is based on project and hints from
