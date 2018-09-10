@@ -7,8 +7,7 @@ Sending emails work only when launched localy for now
 
 
 
-It is based on project and hints from
-https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html
+It is based on project and hints from [simply is better then complex](https://simpleisbetterthancomplex.com/series/2017/09/04/a-complete-beginners-guide-to-django-part-1.html)
 
 
 
